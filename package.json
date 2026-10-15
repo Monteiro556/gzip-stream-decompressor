@@ -1,0 +1,17 @@
+{
+  "name": "gzip-stream-decompressor",
+  "version": "0.1.0",
+  "description": "Decompresses gzip data using Node's zlib streams with error handling that separates corruption from truncation.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {}
+}
