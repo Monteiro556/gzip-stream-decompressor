@@ -42,3 +42,10 @@ it's truncation. A truncated file that happens to cut off after a valid
 deflate block may still be reported as corruption rather than truncation
 because the stream itself throws on the unexpected EOF. This is the best
 Node's public stream API offers without re-implementating inflate.
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
