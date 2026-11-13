@@ -1,6 +1,6 @@
 {
   "name": "gzip-stream-decompressor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Decompresses gzip data using Node's zlib streams with error handling that separates corruption from truncation.",
   "type": "module",
   "main": "src/index.js",
